@@ -1,0 +1,98 @@
+.container {
+    max-height: 708px;
+    height: 100%;
+    max-width: 540px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media only screen and (max-width: 560px) {
+        max-width: 327px;
+        width: 100%;
+    }
+}
+
+.theme_1 {
+    --main-background-color: hsl(222, 26%, 31%);
+    --primary-text-color: #434A59;
+    --secondary-text-color: #FFFFFF;
+    --top-text-color: #FFFFFF;
+
+    --secondary-background-color: #181F33;
+    --terceary-background-color: #242D44;
+
+    --primary-button-color: #EAE3DC;
+    --secondary-button-color: #647198;
+    --terceary-button-color: #D03F2F;
+    --terceary-button-text-color: #FFFFFF;
+
+    --primary-button-color-hover: #FFFFFE;
+    --secondary-button-color-hover: #A2B2E1;
+    --terceary-button-color-hover: #F96B5B;
+
+    --primary-button-shadow-color: #B3A497;
+    --secondary-button-shadow-color: #414E73;
+    --terceary-button-shadow-color: #93261A;
+
+}
+
+.theme_2 {
+    --main-background-color: #E6E6E6;
+    --primary-text-color: #36362C;
+    --secondary-text-color: #FFFFFF;
+    --top-text-color: #36362C;
+
+    --secondary-background-color: #EEEEEE;
+    --terceary-background-color: #D2CDCD;
+
+    --primary-button-color: #E5E4E1;
+    --secondary-button-color: #378187;
+    --terceary-button-color: #C85402;
+    --terceary-button-text-color: #FFFFFF;
+
+    --primary-button-color-hover: #FFFFFF;
+    --secondary-button-color-hover: #62B5BC;
+    --terceary-button-color-hover:#FF8A38;
+
+    --primary-button-shadow-color: #A79E91;
+    --secondary-button-shadow-color: #1B6066;
+    --terceary-button-shadow-color: #873901;
+}
+
+.theme_3 {
+    --main-background-color: #17062A;
+    --primary-text-color: #FFE53D;
+    --secondary-text-color: #FFFFFF;
+    --top-text-color: #FFE53D;
+
+    --secondary-background-color: #1E0936;
+    --terceary-background-color: #1E0936;
+
+    --primary-button-color: #331C4D;
+    --secondary-button-color: #56077C;
+    --terceary-button-color: #00DED0;
+    --terceary-button-text-color: #1A2327;
+    
+    --primary-button-color-hover: #6C34AC;
+    --secondary-button-color-hover: #8631AF;
+    --terceary-button-color-hover:#93FFF8;
+
+    --primary-button-shadow-color: #881C9E;
+    --secondary-button-shadow-color: #BE15F4;
+    --terceary-button-shadow-color: #6CF9F1;
+}
+
+.app_wrapper {
+    background-color: var(--main-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Frontend Mentor Credits */
+.attribution { font-size: 11px; text-align: center; color: var(--top-text-color); }
+.attribution a { color: var(--primary-text-color); text-decoration: underline; }

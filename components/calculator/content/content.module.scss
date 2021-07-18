@@ -1,0 +1,90 @@
+.content_wrapper {
+    color: wheat;
+    width: 100%;
+    height: 480px;
+    margin-top: 24px;
+    background-color: var(--terceary-background-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 24px;
+
+    justify-items: center;
+    align-items: center;
+    padding: 32px 32px 32px 30px;
+    border-radius: 10px;
+
+    @media only screen and (max-width: 560px) {
+        gap: 13px;
+        padding: 24px;
+    }
+}
+.primary_button,
+.secondary_button,
+.terceary_button {
+    width: 101px;
+    height: 64px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 560px) {
+        max-width: 60px;
+        width: 100%;
+        height: 64px;
+
+        font-size: 28px;
+    }
+}
+
+.primary_button {
+    background-color: var(--primary-button-color);
+    box-shadow: 0px -4px 0px 0px var(--primary-button-shadow-color) inset;
+
+    &:hover {
+        background-color: var(--primary-button-color-hover);
+    }
+}
+
+.secondary_button {
+    background-color: var(--secondary-button-color);
+    color: var(--secondary-text-color);
+    box-shadow: 0px -4px 0px 0px var(--secondary-button-shadow-color) inset;
+    font-size: 20px;
+
+    &:hover {
+        background-color: var(--secondary-button-color-hover);
+    }
+
+    @media only screen and (max-width: 560px) {
+        font-size: 16px;
+    }
+
+}
+
+.terceary_button {
+    background-color: var(--terceary-button-color);
+    color: var(--terceary-button-text-color);
+    box-shadow: 0px -4px 0px 0px var(--terceary-button-shadow-color) inset;
+
+    &:hover {
+        background-color: var(--terceary-button-color-hover);
+    }
+}
+
+.two_col {
+    grid-column: auto / span 2;
+    max-width: 227px;
+    width: 100%;
+    height: 64px;
+    font-size: 20px;
+
+    @media only screen and (max-width: 560px) {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,22 @@
+.top_wrapper {
+    background-color: var(--secondary-background-color);
+    height: 128px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-right: 32px;
+    padding-top: 30px;
+    font-size: 48px;
+    text-align: right;
+    color: var(--top-text-color);
+
+    @media only screen and (max-width: 560px) {
+        height: 88px;
+        font-size: 32px;
+        padding-top: 0;
+        padding-right: 25px;
+    }
+}

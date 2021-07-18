@@ -7,7 +7,6 @@ function Calculator() {
         <div>
             <Top />
             <Content />
-            Test Calculator :D
         </div>
     )
 }

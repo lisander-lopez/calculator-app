@@ -1,0 +1,99 @@
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: var(--top-text-color);
+
+    h2 {
+        font-size: 32px;
+        letter-spacing: -0.53344px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+}
+
+.theme_switcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .theme_text {
+        margin-right: 26px;
+    }
+
+    span {
+        font-size: 12px;
+        
+    }
+}
+
+.picker_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+
+    & > span:nth-of-type(2) {
+        order: -1;
+    }
+
+    .picker_input {
+        display: flex;
+        position: relative;
+        cursor: pointer;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+
+            &:checked + .picker_control {
+                &:after {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+
+                    background-color: var(--terceary-button-color);
+                
+                    position: relative;
+                    display: block;
+                    top: 52%;
+                    transform: translateY(-50%);
+                    left: 5px;
+                    border-radius: 100%;
+                }
+                
+              }
+        }
+    }
+
+    .picker_control {
+        display: block;
+        width: 23.66px;
+        height: 26px;
+        background-color: var(--terceary-background-color);
+
+        &:hover::after {
+            background-color: var(--terceary-button-color-hover) !important;
+        }
+
+        &.first {
+            border-top-left-radius: 13px;
+            border-bottom-left-radius: 13px;
+            background-color: var(--terceary-background-color);
+        }
+
+        &.last {
+            border-top-right-radius: 13px;
+            border-bottom-right-radius: 13px;
+            background-color: var(--terceary-background-color);
+        }
+
+    }
+
+    label {
+        font-size: 12px;
+    }
+}
